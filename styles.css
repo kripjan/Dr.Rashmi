@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added for consistent layout behavior */
+}
+
+.container {
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden; 
+}
+
+.pages {
+    display: flex;
+    width: 200dvw;
+    height: 100%;
+    box-sizing: border-box;
+    transition: transform 0.5s ease;
+}
+
+.page {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+.two{
+    background-color:var(--background-page-color);
+}
+.one, .two {
+    width: 100dvw;
+    height: 100dvh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+}
+
+.card {
+    margin: 0;
+    padding: 2dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 90dvh;
+    min-width: 90dvw;
+}
+
+.logo {
+    font-size: 10dvh;
+    font-weight: bold;
+    font-family: 'Great Vibes', cursive;
+    color: #ffffff;
+}
+
+.name {
+    font-size: 10dvh;
+    font-family: 'Great Vibes', cursive;
+    color: #ffffff;
+}
+
+.designation {
+    font-size: 3dvh;
+    color:#ffffff;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    text-align: center;
+}
+.top {
+    text-align: left;
+    /* border: 2px solid #ff0000; */
+}
+
+h2 {
+    font-size: 10dvh;
+    font-weight: 600;
+    color: #333;
+}
+
+.specialties {
+    font-size: 4dvh;
+    font-weight: 1000;
+    color: #555;
+}
+
+
+.right{
+    padding-top: 10dvh;
+    /* border: 2px solid rgb(156, 0, 159); */
+}
+.qr-code {
+    width: 40dvh;
+    /* border: 2px solid rgb(156, 0, 159); */
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    font-size: 4dvh;
+    color: #333;
+    /* border: 2px solid rgb(156, 0, 159); */
+
+}
+
+.right p {
+    /* border: 2px solid rgb(0, 159, 149); */
+    margin-bottom: 5px;
+}
+.button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+}
+
+.container .button_container {
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+}
+
+.container .button_container .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Ensures even spacing */
+    gap: 1dvh; /* Adds consistent spacing */
+}
+
+.container .pages .item:nth-child(1) {
+    width: 100dvw;
+    align-self: center;
+}
+
+.container .dots li {
+    background-color: var(--dots-color);
+}
+
+.container .buttons button {
+    background-color: var(--container-button-color);
+    color: var(--text-color);
+    border: none;
+    font-size: 3dvh; /* Ensure buttons scale with viewport */
+    padding: 0; /* Remove extra padding */
+    margin: 0; /* Remove extra margin */
+    height: fit-content;
+    align-self: center;
+    font-weight: bold;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+button i {
+    padding: 5px;
+}
+
+.container .buttons button:hover {
+    transform: scale(1.3);
+}
+
+.container .dots {
+    display: flex;
+    justify-content: center; /* Ensures dots remain centered */
+    align-items: center;
+    gap: 0.5dvh; /* Adjusts dot spacing */
+    width: 100%;
+}
+
+.container .dots li {
+    list-style: none;
+    width: 2dvh;
+    height: 2dvh;
+    margin: 1dvh;
+    border-radius: 2dvh;
+    transition: 0.5s;
+}
+
+.container .dots li.active {
+    width: 5dvh;
+}
+
+/* Ensure both buttons are aligned and have no extra spacing */
+#prev, #next {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#prev i, #next i {
+    font-size: 3dvh; /* Ensure both icons are the same size */
+}
+#prev {
+    /* border: 1px solid red; */
+}
+
+#next {
+    /* border: 1px solid blue; */
+}
+
+/* Root Variables */
+:root {
+    --background-page-color:#9D7C39;
+    --background-color: #ffffff;
+    --text-color: #513f22;
+    --dots-color: #513f22;
+    --link-color: #513f22;
+    --container-button-color: rgba(0, 0, 0, 0);
+}
