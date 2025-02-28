@@ -55,10 +55,9 @@
 }
 
 .logo {
-    font-size: 10dvh;
-    font-weight: bold;
-    font-family: 'Great Vibes', cursive;
-    color: #ffffff;
+    display: flex;
+    justify-content: center;
+   height: 40%;
 }
 
 .name {
@@ -89,7 +88,7 @@ h2 {
 
 .specialties {
     font-size: 4dvh;
-    font-weight: 1000;
+    font-weight: 500;
     color: #555;
 }
 
@@ -116,6 +115,11 @@ h2 {
 .right p {
     /* border: 2px solid rgb(0, 159, 149); */
     margin-bottom: 5px;
+}
+
+.right i,a {
+    text-decoration: none;
+    color: #000000;
 }
 .button {
     position: absolute;
@@ -201,14 +205,7 @@ button i {
 }
 
 #prev i, #next i {
-    font-size: 3dvh; /* Ensure both icons are the same size */
-}
-#prev {
-    /* border: 1px solid red; */
-}
-
-#next {
-    /* border: 1px solid blue; */
+    font-size: 4.5dvh; /* Ensure both icons are the same size */
 }
 
 /* Root Variables */
@@ -219,4 +216,82 @@ button i {
     --dots-color: #513f22;
     --link-color: #513f22;
     --container-button-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 768px) {
+     body {
+        overflow: hidden;
+        padding: 0;
+       
+    }
+    .page {
+        width: 100vw;
+        height: 100vh; /* Full height per section */
+        padding: 5vw;
+        text-align: center;
+    }
+
+    .card {
+        min-width: 95vw;
+        min-height: auto;
+        padding: 5vw;
+    }
+    .logo{
+        height: 20%;
+    }
+    .designation{
+        font-size: 3dvw;
+    }
+    h2 {
+        font-size: 6dvh;
+        text-align: center;
+    }
+
+    .specialties {
+        font-size: 3dvh;
+        text-align: center;
+    }
+
+    .bottom {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .qr-code {
+        width: 50%;
+        margin-top: 2dvh;
+        margin-bottom: 2dvh;
+    }
+
+    .right {
+        padding-top: 2dvh;
+        font-size: 3dvh;
+    }
+
+    .right p {
+        margin-bottom: 1dvh;
+    }
+
+    .container .buttons {
+        flex-direction: row;
+        gap: 1dvh;
+    }
+
+    .container .buttons button {
+        font-size: 2.5dvh;
+    }
+
+    .container .dots li {
+        width: 1.5dvh;
+        height: 1.5dvh;
+    }
+
+    .container .dots li.active {
+        width: 3dvh;
+    }
+
+    #prev i, #next i {
+        font-size: 3.5dvh;
+    }
 }
