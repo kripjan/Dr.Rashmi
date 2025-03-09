@@ -1,3 +1,4 @@
+@import url(https://db.onlinewebfonts.com/c/83e4a6b639612cd501853be5a7cf97ab?family=Trend+Sans+One+Regular);
 * {
     margin: 0;
     padding: 0;
@@ -57,7 +58,7 @@
 .logo {
     display: flex;
     justify-content: center;
-   height: 40%;
+   height: 50%;
 }
 
 .name {
@@ -66,7 +67,7 @@
     color: #ffffff;
 }
 
-.designation {
+/* .designation {
     font-size: 3dvh;
     color:#ffffff;
     text-transform: uppercase;
@@ -74,7 +75,7 @@
     letter-spacing: 1px;
     margin-top: 5px;
     text-align: center;
-}
+} */
 .top {
     text-align: left;
     /* border: 2px solid #ff0000; */
@@ -89,12 +90,12 @@ h2 {
 .specialties {
     font-size: 4dvh;
     font-weight: 500;
-    color: #555;
+    color: #333;
 }
 
 
 .right{
-    padding-top: 10dvh;
+    padding-top: 21dvh;
     /* border: 2px solid rgb(156, 0, 159); */
 }
 .qr-code {
@@ -106,7 +107,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     text-align: right;
-    font-size: 4dvh;
+    font-size: 5dvh;
     color: #333;
     /* border: 2px solid rgb(156, 0, 159); */
 
@@ -117,9 +118,16 @@ h2 {
     margin-bottom: 5px;
 }
 
-.right i,a {
+.right a {
+    /* font-family: Trend Sans One Regular; */
+
     text-decoration: none;
     color: #000000;
+}
+.right i{
+    vertical-align: middle;
+    text-decoration: none;
+    color: #9D7C39;
 }
 .button {
     position: absolute;
@@ -237,7 +245,7 @@ button i {
         padding: 5vw;
     }
     .logo{
-        height: 20%;
+        height: 25%;
     }
     .designation{
         font-size: 3dvw;
