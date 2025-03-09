@@ -12,8 +12,6 @@
 }
 
 .curve {
-    width:10pxpx;
-    height: 60dvh;
     position: absolute;
     top: 0px;
     right: 20dvh;
@@ -249,7 +247,7 @@ button i {
     }
 
     .curve{
-        height: 4dvh;
+        display: none;
     }
     .card {
         min-width: 95vw;
