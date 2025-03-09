@@ -11,6 +11,14 @@
     overflow: hidden; 
 }
 
+.curve {
+    width:10pxpx;
+    height: 60dvh;
+    position: absolute;
+    top: 0px;
+    right: 20dvh;
+}
+
 .pages {
     display: flex;
     width: 200dvw;
@@ -43,9 +51,11 @@
     overflow: hidden;
     transform: translateX(0);
     transition: transform 0.5s ease;
+    
 }
 
 .card {
+    z-index: 2;
     margin: 0;
     padding: 2dvh;
     display: flex;
@@ -120,7 +130,6 @@ h2 {
 
 .right a {
     /* font-family: Trend Sans One Regular; */
-
     text-decoration: none;
     color: #000000;
 }
@@ -239,6 +248,9 @@ button i {
         text-align: center;
     }
 
+    .curve{
+        height: 4dvh;
+    }
     .card {
         min-width: 95vw;
         min-height: auto;
